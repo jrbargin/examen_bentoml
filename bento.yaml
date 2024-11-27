@@ -1,0 +1,20 @@
+service: "service:svc"
+name: "admission_api_service"
+description: "API pour prédire les chances d'admission"
+labels:
+  owner: "JRB"
+
+include:
+  - src/
+  - data/
+python:
+  packages:
+    - numpy
+    - pandas
+    - scikit-learn
+    - bentoml
+    - pydantic
+    - xgboost
+    - requests
+    - pyjwt
+
