@@ -47,6 +47,8 @@ class AdmissionInput(BaseModel):
     LOR: float
     CGPA: float
     Research: int
+    
+
 
 # Get the model from the Model Store
 model_runner = bentoml.sklearn.get("xgboost_model:xmxvnlvhekovmauu").to_runner()

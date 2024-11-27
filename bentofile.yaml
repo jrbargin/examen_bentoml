@@ -1,4 +1,4 @@
-service: "service:svc"
+service: src.service:svc
 name: "admission_api_service"
 description: "API pour prédire les chances d'admission"
 labels:
